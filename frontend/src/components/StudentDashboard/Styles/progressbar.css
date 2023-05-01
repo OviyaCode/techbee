@@ -1,0 +1,60 @@
+.progress-bar {
+    height: 5px;
+    background-color: #ccc;
+    position: relative;
+    width: 90%;
+    border-radius: 20px;
+  }
+  
+  .progress-bar::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ab8ce4;
+    animation: progress 2s ease-in-out forwards;
+  }
+  
+  @keyframes progress {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 10%;
+    }
+  }
+  
+.progress-bar2  {
+    height: 5px;
+    background-color: #ccc;
+    position: relative;
+    width: 90%;
+    border-radius: 20em;
+  }
+  
+  .progress-bar2::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #03a9f3;
+    border-radius: 20em;
+    animation: progress 2s ease-in-out forwards;
+  }
+  
+  @keyframes progress {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 10%;
+    }
+  }
+  
+ 
